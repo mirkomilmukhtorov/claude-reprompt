@@ -16,7 +16,7 @@ Use the slash command arguments if supplied. Otherwise use the latest request an
 
 ## References
 
-Read only the references that apply. Use these paths relative to `${CLAUDE_SKILL_DIR}`.
+Read only the references that apply. Resolve these paths relative to the folder containing this `SKILL.md`.
 
 - [Prompting rules and evidence](references/prompting.md) for examples, long inputs, tool use, output formats, and evaluation.
 - [Sonnet and Opus guidance](references/models.md) for model selection, effort, thinking, and version migration.
