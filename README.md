@@ -4,7 +4,13 @@ A Claude Code skill that turns rough instructions into ready-to-paste prompts fo
 
 ## Install
 
-Download [`claude-reprompt.zip`](https://github.com/mirkomilmukhtorov/claude-reprompt/releases/latest/download/claude-reprompt.zip). Extract it into `~/.claude/skills/` for personal use or `.claude/skills/` at your project root. The installed folder should contain `claude-reprompt/SKILL.md` and its `references/` folder.
+From your project root, run this with Node.js 22.20 or newer:
+
+```sh
+npx skills add mirkomilmukhtorov/claude-reprompt --skill claude-reprompt --agent claude-code --yes
+```
+
+Add `--global` to install it for all your projects.
 
 Open Claude Code and try:
 

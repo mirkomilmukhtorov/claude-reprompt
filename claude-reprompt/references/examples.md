@@ -2,7 +2,13 @@
 
 ## Install in Claude Code
 
-Extract the ZIP into `~/.claude/skills/` for personal use or into `.claude/skills/` at the project root for project use. Keep the `claude-reprompt` folder and its `references` together. For a project install, the entry point is `.claude/skills/claude-reprompt/SKILL.md`.
+From your project root, run this with Node.js 22.20 or newer:
+
+```sh
+npx skills add mirkomilmukhtorov/claude-reprompt --skill claude-reprompt --agent claude-code --yes
+```
+
+Add `--global` to install it for all your projects. [Skills CLI documentation](https://github.com/vercel-labs/skills)
 
 Run `/claude-reprompt` in Claude Code. If you created the top-level skills directory during an open session, run `/reload-skills` or start a new session. Claude can also discover the skill from a natural-language request to rewrite a prompt. [Claude Code skills documentation](https://code.claude.com/docs/en/skills)
 
