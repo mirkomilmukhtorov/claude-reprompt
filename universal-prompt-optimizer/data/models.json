@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-11-07",
+  "note": "Point-in-time research snapshot. Reverify current API availability, pricing, limits, and effort before use. Listed support does not imply user account access.",
+  "models": [
+    {
+      "provider": "openai",
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "reasoning.effort",
+        "supported": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-6.1-sol",
+      "name": "GPT-6.1 Sol",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "reasoning.effort",
+        "supported": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-6.1-terra",
+      "name": "GPT-6.1 Terra",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "reasoning.effort",
+        "supported": [
+          "none",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "reasoning.effort",
+        "supported": [
+          "none",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    },
+    {
+      "provider": "google",
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "thinking_level",
+        "supported": [
+          "low",
+          "medium",
+          "high"
+        ]
+      }
+    },
+    {
+      "provider": "google",
+      "id": "gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "thinking_level",
+        "supported": [
+          "low",
+          "medium",
+          "high"
+        ]
+      }
+    },
+    {
+      "provider": "google",
+      "id": "gemini-3.5-flash-lite",
+      "name": "Gemini 3.5 Flash-Lite",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "thinking_level",
+        "supported": [
+          "minimal",
+          "low",
+          "medium",
+          "high"
+        ]
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "output_config.effort",
+        "supported": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "output_config.effort",
+        "supported": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "output_config.effort",
+        "supported": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "status": "active_at_snapshot",
+      "reasoning": {
+        "parameter": "output_config.effort",
+        "supported": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      }
+    }
+  ]
+}
