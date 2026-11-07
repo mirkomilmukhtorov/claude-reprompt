@@ -14,6 +14,24 @@ npx skills add mirkomilmukhtorov/claude-reprompt --skill universal-prompt-optimi
 
 This installs the **new skill only**; it does not install the legacy alias. Agent flags use the identifiers documented by the [Vercel Skills CLI](https://github.com/vercel-labs/skills/blob/main/docs/agents.md). The CLI determines each agent's installation path.
 
+### Antigravity App: required compatibility copy
+
+**Antigravity 2.0 and Antigravity IDE may not display a skill installed by `npx` alone.** As of November 2026, the Skills CLI documents `~/.gemini/antigravity/skills/` as its global destination, while Google's current Antigravity App documentation identifies `~/.gemini/config/skills/` as the global discovery directory. This mismatch can hide the skill even when `npx skills list --global` reports it installed.
+
+After the npx command above, run the following on the same Mac:
+
+```sh
+mkdir -p "$HOME/.gemini/config/skills/universal-prompt-optimizer"
+rsync -aL "$HOME/.gemini/antigravity/skills/universal-prompt-optimizer/" "$HOME/.gemini/config/skills/universal-prompt-optimizer/"
+test -f "$HOME/.gemini/config/skills/universal-prompt-optimizer/SKILL.md" && echo "Antigravity skill ready"
+```
+
+If the CLI installed the source in another directory, use that source instead. The repository's `universal-prompt-optimizer/scripts/install_all.sh` automates both the npx installation and a checked compatibility copy for all four agents.
+
+Restart Antigravity, open **Customizations > Skills**, and search for `universal-prompt-optimizer`. You can then try `/universal-prompt-optimizer`.
+
+Sources: [Google's Antigravity skill discovery paths](https://antigravity.google/docs/skills?app=antigravity-ide); [Skills CLI agent paths](https://github.com/vercel-labs/skills#supported-agents).
+
 If you want to install the new skill for every agent supported by your Skills CLI rather than the four above, use:
 
 ```sh
